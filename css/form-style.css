@@ -1,0 +1,78 @@
+#contenedor-catalogo {
+    background:transparent;
+    max-width: auto;
+}
+
+#contenedor-catalogo form fieldset {
+    border:thin solid #f8bdeb;
+    padding:1rem;
+    font-size:1rem;
+}
+
+#contenedor-catalogo form{ 
+    padding:5px;
+    margin:1px;
+    border-radius:5px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+}
+
+#contenedor-catalogo form label {
+    color:#004040;
+    font-size: 1.2rem;
+}
+
+#contenedor-catalogo form label:hover{
+    color:#171717;
+    cursor:pointer;
+}
+
+#contenedor-catalogo form input[type="text"]{
+    width:auto;
+    height:35px;
+    
+    font-family:Helvetica;
+    font-size:1.2rem;
+}
+
+#contenedor-catalogo form textarea{
+    resize: none;
+    padding: 5px;
+}
+
+#contenedor-catalogo form input[type="text"], textarea {
+    background: rgba(128, 128, 128, 0.335);
+}
+
+#contenedor-catalogo form input[type="text"]:focus, #contenedor-catalogo form textarea:focus{
+    background: #f8bdeb;
+    outline-color: #008A45;
+}
+
+#contenedor-catalogo form input[type="text"]:active, #contenedor-catalogo form textarea:active{
+    background: #01ca80;
+    outline-color: #008A45;
+}
+
+#contenedor-catalogo form .canbio{
+    transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    }
+
+#contenedor-catalogo form button{
+    background:#ba54da;
+    border-radius:5px;
+    color:white;
+    padding:10px 20px;
+    border:2px solid white;
+}
+
+#contenedor form button:hover {
+    color:black;
+    cursor:pointer;
+}

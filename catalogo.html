@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero de Érica</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--CSS Estilo General-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--CSS MQ-->
+    <link rel="stylesheet" href="css/mobile.css" 
+            media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="css/tablet.css" 
+            media="screen and (min-width: 640px) and (max-width: 1280px)">
+    <link rel="stylesheet" href="css/desktop.css" 
+            media="screen and (min-width: 1280px)">
+    <!--CSS Menú Nav-->
+    <link rel="stylesheet" href="css/nav-style.css">
+    <!--CSS Formulario-->
+    <link rel="stylesheet" href="css/form-style.css">
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/cf1a0b0945.js" crossorigin="anonymous"></script>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header class="header">
+            <h1>El Vivero de Érica</h1>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+            <article class="articulo" id="catalogo">
+                <h1>Resolvé tus dudas y recibí nuestro catálogo mensual</h1>
+                <section class="secciones">
+                    <div id="contenedor-catalogo">
+                        <form action="enviar.php" method="post" id="formulario" name="formulario">
+                            <fieldset>
+                                <legend>Tus datos:</legend>
+				                <label for="nombres">Nombres y Apellidos:</label><br>
+				                <input type="text"  name="nombres" id="nombres"/><br>
+
+                                <label for="email">Email:</label><br/>
+				                <input type="text"  name="email" id="email"/><br>
+
+                                <label for="telefono">Tel&eacute;fono/Celular:</label><br>
+				                <input type="text"  name="telefono" id="telefono"/><br>
+                            </fieldset>
+                                <label id="comentario" for="comentario">Redactá tu consulta:</label><br/>
+                                <textarea name="comentario" id="comentario" cols="20" rows="10" maxlength="1000" onkeypress="calcular()" onkeyup="calcular()"></textarea><br/>
+				                <p>Le quedan <span id="contador-char">1000</span> de 1000 caracteres.</p>
+				                <br/><br/>
+				            <button type="button" name="enviar" id="enviar" class="canbio">Enviar</button>&nbsp;&nbsp;&nbsp;<button type="button" id="limpiar" name="limpiar" class="canbio">Limpiar Formulario</button>
+                        </form>
+                    </div>
+                </section>
+            </article>
+        
+        
+        <aside class="asidebar">
+            <h3>Publicidad</h3>
+        </aside>
+        <footer class="footer">
+            <h5>¡Contactanos en cualquiera de nuestras redes sociales!</h5>
+            <a href="http://www.facebook.com" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+            <a href="http://www.instagram.com" target="_blank" ><i class="fab fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.telegram.org/" target="_blank" ><i class="fab fa-telegram"></i></a>
+        </footer>
+    </main>
+    <script src="js/nav.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

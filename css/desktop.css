@@ -1,0 +1,8 @@
+@media screen and (min-width: 1280px) {
+    .articulo{flex:4 0;}
+    .articulo{order: 1;}
+    .footer{order: 4;}
+    .asidebar{
+        order: 3;
+        max-width: 400px;}
+} 
